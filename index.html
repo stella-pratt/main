@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <link rel="icon" href="Images/logo.png">
     <title>Onslow Enviro Group</title>
 </head>
@@ -15,13 +16,6 @@
         <video class="loading-vid" autoplay muted
                loop><source src="Images/loading.mp4" type="video/mp4"></video>
     </div>
-    <script>
-        function loadingpage() {
-            document.getElementById("loading").style.opacity= "0";
-            document.getElementById("loading").style.zIndex= "-1";
-            document.body.style.overflow= "visible";
-        }
-    </script>
     <div id="side-menu" class="sidemenu">
         <a href="javascript:void(0)" class="closebtn"
            onclick="closeNav()"><img src="Images/Close.png"
@@ -43,73 +37,9 @@
         <span style="cursor: pointer" onclick="openNav()" id="icon-header">&#9776;</span>
     </div><!--Header-->
 
-    <script>
-        window.onscroll = function () {scroll_detect()};
-
-        function scroll_detect() {
-            if (document.body.scrollTop > 50 ||
-                document.documentElement.scrollTop > 50) {
-                document.getElementById("header").style.height =
-                    "100px";
-                document.getElementById("logo_header").style.height =
-                    "70px";
-                document.getElementById("logo_header").style.top =
-                    "15px";
-                document.getElementById("header_text").style.fontSize =
-                    "30px";
-                document.getElementById("header_position").style.left =
-                    "250px";
-                document.getElementById("header_position").style.top =
-                    "25px";
-                document.getElementById("icon-header").style.fontSize =
-                    "50px";
-                document.getElementById("back2top").style.opacity = "1";
-                document.getElementById("back2top").style.cursor = "pointer";
-            } else {
-                document.getElementById("header").style.height =
-                    "180px";
-                document.getElementById("logo_header").style.height =
-                    "130px";
-                document.getElementById("logo_header").style.top =
-                    "25px";
-                document.getElementById("header_text").style.fontSize =
-                    "50px";
-                document.getElementById("header_position").style.left =
-                    "300px";
-                document.getElementById("header_position").style.top =
-                    "45px";
-                document.getElementById("icon-header").style.fontSize =
-                    "100px";
-                document.getElementById("back2top").style.opacity = "0";
-                document.getElementById("back2top").style.cursor = "default";
-            }
-        }
-    </script>
-
-    <script>
-        /* makes side menu appear */
-        function openNav() {
-            document.getElementById("side-menu").style.width = "400px";
-            document.getElementById("menu_fade").style.opacity= "1";
-            document.getElementById("menu_fade").style.zIndex= "2";
-        }
-        /* dissapear */
-        function closeNav() {
-            document.getElementById("side-menu").style.width= "0";
-            document.getElementById("menu_fade").style.opacity= "0";
-            document.getElementById("menu_fade").style.zIndex= "-1";
-        }
-    </script>
 
     <button id="back2top" onclick="gototop()"><img src="Images/Arrow.png" alt="Arrow"
                                class="arrow"></button>
-    <script>
-        function gototop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-
 
     <div class="main">
         <div class="left_paragraph">
