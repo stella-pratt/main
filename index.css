@@ -51,7 +51,7 @@ body {
     background-color: #ffffff;
     z-index: 10;
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.2s;
     cursor: wait;
 }
 #loading h1 {
