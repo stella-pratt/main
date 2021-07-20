@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Images/logo.png">
+    <title>Onslow Enviro Group</title>
+</head>
+<body onload="loadingpage()">
+
+    <div id="loading">
+        <h1>Loading</h1>
+        <video class="loading-vid" autoplay muted
+               loop><source src="Images/loading.mp4" type="video/mp4"></video>
+    </div>
+    <script>
+        function loadingpage() {
+            document.getElementById("loading").style.opacity= "0";
+            document.getElementById("loading").style.zIndex= "-1";
+            document.body.style.overflow= "visible";
+        }
+    </script>
+    <div id="side-menu" class="sidemenu">
+        <a href="javascript:void(0)" class="closebtn"
+           onclick="closeNav()"><img src="Images/Close.png"
+                                     alt="Close Button" id="closebtnimg"></a>
+        <a href="Homepage.html" target="_self">Homepage</a>
+        <a href="#">Projects</a>
+        <a href="#">About Us</a>
+    </div>
+
+    <div id="menu_fade" onclick="closeNav()"></div>
+
+
+    <div id="header">
+        <img src="Images/logo.png" alt="Onslow Logo" height="130px"
+             id="logo_header">
+        <div id="header_position">
+            <h1 id="header_text">Onslow Enviro Group</h1>
+        </div>
+        <span style="cursor: pointer" onclick="openNav()" id="icon-header">&#9776;</span>
+    </div><!--Header-->
+
+    <script>
+        window.onscroll = function () {scroll_detect()};
+
+        function scroll_detect() {
+            if (document.body.scrollTop > 50 ||
+                document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.height =
+                    "100px";
+                document.getElementById("logo_header").style.height =
+                    "70px";
+                document.getElementById("logo_header").style.top =
+                    "15px";
+                document.getElementById("header_text").style.fontSize =
+                    "30px";
+                document.getElementById("header_position").style.left =
+                    "250px";
+                document.getElementById("header_position").style.top =
+                    "25px";
+                document.getElementById("icon-header").style.fontSize =
+                    "50px";
+                document.getElementById("back2top").style.opacity = "1";
+                document.getElementById("back2top").style.cursor = "pointer";
+            } else {
+                document.getElementById("header").style.height =
+                    "180px";
+                document.getElementById("logo_header").style.height =
+                    "130px";
+                document.getElementById("logo_header").style.top =
+                    "25px";
+                document.getElementById("header_text").style.fontSize =
+                    "50px";
+                document.getElementById("header_position").style.left =
+                    "300px";
+                document.getElementById("header_position").style.top =
+                    "45px";
+                document.getElementById("icon-header").style.fontSize =
+                    "100px";
+                document.getElementById("back2top").style.opacity = "0";
+                document.getElementById("back2top").style.cursor = "default";
+            }
+        }
+    </script>
+
+    <script>
+        /* makes side menu appear */
+        function openNav() {
+            document.getElementById("side-menu").style.width = "400px";
+            document.getElementById("menu_fade").style.opacity= "1";
+            document.getElementById("menu_fade").style.zIndex= "2";
+        }
+        /* dissapear */
+        function closeNav() {
+            document.getElementById("side-menu").style.width= "0";
+            document.getElementById("menu_fade").style.opacity= "0";
+            document.getElementById("menu_fade").style.zIndex= "-1";
+        }
+    </script>
+
+    <button id="back2top" onclick="gototop()"><img src="Images/Arrow.png" alt="Arrow"
+                               class="arrow"></button>
+    <script>
+        function gototop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+    <div class="main">
+        <div class="left_paragraph">
+            <h3 class="title">Our Vision</h3>
+            <p>The Onslow Enviro Group brings together students and staff who are
+            concerned about issues impacting our environment and who are
+            committed to promoting positive change in our community. </p>
+        </div>
+        <img src="Images/gardening.jpg" alt="People Gardening" class="right_paragraph">
+
+        <video class="left_paragraph" autoplay muted loop><source
+            src="Images/vidtree.mp4" type="video/mp4"></video>
+        <div class="right_paragraph">
+            <p>We work together to promote our aims through, advocacy,
+                fundraising and school projects. We facilitate inclusive practice
+                and promote the development of student leaders with our various
+                projects each having students overseeing the work. </p>
+        </div>
+        <div class="clear"></div>
+        <div class="left_paragraph">
+            <h3 class="title">Our Goal</h3>
+            <p>The Onslow Enviro Group wants to bring native birds and lizards
+                back to Onslow College and provide sheltered places for plants,
+                animals and people on Table Mountain. </p>
+        </div>
+        <img src="Images/maedow.jpg" alt="Meadow" class="right_paragraph">
+    </div><!--Main-->
+
+    <div class="sidebar">
+        <h2 style="text-align: center">Enviro Blog</h2>
+        <div class="post">
+            <div class="blog-text">
+                <p>
+                    Thu, Jul 08, 2021<br><br>
+                    We finally managed to get the beetroot planted today. The
+                    weather hasn't been so great these past weeks so we are
+                    glad for this break in the storm.
+                </p>
+            </div>
+            <img src="Images/Beetroot.jpg" alt="Beetroot" class="blog-images">
+        </div>
+        <div class="post">
+            <div class="blog-text">
+                <p>
+                    Fri, Apr 23, 2021<br><br>
+                    We have just purchased some lovely succulents for our
+                    garden. Pick some up for your self from the Onslow Gardens.
+                </p>
+            </div>
+            <img src="Images/pots.jpg" alt="Succulents in Pots"
+                 class="blog-images">
+        </div>
+        <div class="post">
+            <div class="blog-text">
+                <p>
+                    Tue, Jan 19, 2021<br><br>
+                    Today is international flower day! Why
+                    not plant a flower as they are pretty.
+                </p>
+            </div>
+            <img src="Images/flowers.jpg" alt="Flowers" class="blog-images">
+        </div>
+    </div><!--Sidebar-->
+
+    <div class="footer">
+        <h2 class="text-position">Onslow Enviro Group</h2>
+        <img src="Images/logo.png" alt="Onslow Logo" class="footer-logo">
+        <ul class="page-list">
+            <li><a href="Homepage.html" target="_self">Homepage</a></li> <!-- Add the links
+            later once all pages made-->
+            <li>Projects</li>
+            <li>About Us</li>
+        </ul>
+        <ul class="contact-list">
+            <li class="contact-header">Contact Us</li>
+            <li><a href="mailto:enviro@enviro.school.nz" target="_blank">enviro@onslow.school
+                .nz</a></li>
+            <li><a href="https://www.facebook.com/onslowenvirogroup/" target="_blank">Facebook</a></li>
+        </ul>
+        <p class="reference">All images and videos <a
+                href="https://www.pexels.com/" target="_blank">Pexels</a> </p>
+    </div><!--Footer-->
+</body>
+</html>
