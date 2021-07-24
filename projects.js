@@ -43,14 +43,14 @@ function scroll_detect() {
 /* Opens menu */
 function openNav() {
     document.getElementById("side-menu").style.width = "400px";
-    document.getElementById("menu_fade").style.opacity= "1";
     document.getElementById("menu_fade").style.zIndex= "2";
+    document.getElementById("menu_fade").style.opacity= "1";
 }
 /* Closes menu */
 function closeNav() {
     document.getElementById("side-menu").style.width= "0";
+    document.getElementById("menu_fade").style.zIndex= "-1";
     document.getElementById("menu_fade").style.opacity= "0";
-    document.getElementById("menu_fade").style.zIndex= "-10";
 }
 
 /* goes to top when button is clicked */

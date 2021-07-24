@@ -58,10 +58,10 @@ body {
 #loading h1 {
     font-size: 100px;
     color: #373837;
-    width: 20%;
+    width: 30%;
     text-align: center;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 35%;
+    margin-right: 35%;
     position: fixed;
     top: 200px;
 }
@@ -70,7 +70,7 @@ body {
     margin-right: 35%;
     margin-left: 35%;
     position: fixed;
-    bottom: 0;
+    bottom: 10vh;
 }
 
 .sidemenu {
@@ -195,12 +195,12 @@ body {
 }
 .left_paragraph {
     width: 47%;
-    padding: 20px 10px 0 20px;
+    padding: 20px 1% 0 2%;
     float: left;
 }
 .right_paragraph {
     width: 47%;
-    padding: 20px 20px 0 10px;
+    padding: 20px 2% 0 1%;
     float: left;
 }
 .clear {
@@ -213,9 +213,7 @@ body {
     width: 30%;
     float: left;
     background: #F5F5F5;
-    margin-top: 200px;
-    margin-right: 1%;
-    margin-left: 0.5%;
+    margin: 200px 1% 20px 0.5%;
 }
 .post {
     font-family: Montserrat;
@@ -227,14 +225,15 @@ body {
 }
 .blog-images, .blog-text {
     display: inline-block;
-    padding: 10px;
 }
 .blog-images {
     float: right;
     width: 30%;
+    padding: 10px 2% 10px 1%;
 }
 .blog-text {
-    width: 50%;
+    width: 64%;
+    padding: 10px 1% 10px 2%;
 }
 
 .footer {
@@ -249,23 +248,25 @@ body {
     color: inherit;
 }
 .text-position {
-    position: relative;
-    top: 85px;
-    left: 300px;
+    position: absolute;
     width: 300px;
+    margin-top: 85px;
+    margin-left: 14%;
 }
 .footer-logo {
     height: 100px;
-    position: relative;
-    left: 200px;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 75px;
 }
 .page-list {
     font-family: Montserrat;
-    position: relative;
-    left: 800px;
-    bottom: 120px;
+    position: absolute;
+    padding: 0;
     list-style: none;
     width: 200px;
+    margin-left: 50%;
+    margin-top: 81.5px;
 }
 li {
     padding: 5px;
@@ -278,12 +279,12 @@ li {
     color: black;
 }
 .contact-list {
-    position: relative;
-    bottom: 225px;
-    left: 1300px;
+    position: absolute;
     list-style: none;
     font-family: Montserrat;
-    width: 300px;
+    width: 220px;
+    margin-left: 65%;
+    margin-top: 79px;
 }
 .contact-header {
     font-family: Oswald;

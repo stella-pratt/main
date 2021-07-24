@@ -185,40 +185,30 @@ mark {
 }
 
 .description {
-    width: 40%;
-    position: relative;
-    top: 300px;
-}
-.description2 {
-    width: 40%;
-    position: relative;
-    top: 300px;
-    left: 165px;
-    height: 60vh;
+    width: 60%;
+    margin: auto 10%;
 }
 .description p {
     font-size: 24px;
 }
+.main-header {
+    width: 0;
+    padding: 0;
+}
 .main-header h2 {
     font-size: 48px;
-}
-.description2 p {
-    font-size: 24px;
+    padding: 0;
 }
 .description-title {
     font-size: 30px;
     padding: 0;
 }
-.description2 a {
+.description a {
     color: inherit;
     transition: 0.2s;
 }
-.description2 a:hover {
+.description a:hover {
     color: #373837;
-}
-.main-header {
-    padding: 2px 4px;
-    float: left;
 }
 .para-div1 {
     display: flex;
@@ -243,7 +233,7 @@ mark {
     background-image: url("Images/waipahihi.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position-y: -200px;
+    background-position-y: -100px;
 }
 .para-div4 {
     display: flex;
@@ -263,30 +253,33 @@ mark {
     clear: both;
     width: 100%;
     height: 250px;
-    background: #00b182;
+    margin-top: 20px;
+    background: #00B182;
     position: relative;
 }
 .footer a {
     color: inherit;
 }
 .text-position {
-    position: relative;
-    top: 85px;
-    left: 300px;
+    position: absolute;
     width: 300px;
+    margin-top: 85px;
+    margin-left: 14%;
 }
 .footer-logo {
     height: 100px;
-    position: relative;
-    left: 200px;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 75px;
 }
 .page-list {
     font-family: Montserrat;
-    position: relative;
-    left: 800px;
-    bottom: 120px;
+    position: absolute;
+    padding: 0;
     list-style: none;
     width: 200px;
+    margin-left: 50%;
+    margin-top: 81.5px;
 }
 li {
     padding: 5px;
@@ -299,12 +292,12 @@ li {
     color: black;
 }
 .contact-list {
-    position: relative;
-    bottom: 225px;
-    left: 1300px;
+    position: absolute;
     list-style: none;
     font-family: Montserrat;
-    width: 300px;
+    width: 220px;
+    margin-left: 65%;
+    margin-top: 79px;
 }
 .contact-header {
     font-family: Oswald;
