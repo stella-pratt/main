@@ -79,7 +79,7 @@ body {
     z-index: 3;
     top: 0;
     right: 0;
-    background-color: #238732;
+    background-color: #00B182;
     overflow-x: hidden;
     padding-top: 170px;
     transition: 0.5s;
@@ -169,12 +169,24 @@ body {
     transition: 0.2s;
 }
 #back2top:hover {
-    background-color: #238732;
+    background-color: #F5F5F5;
 }
 .arrow {
     width: 27px;
     margin-left: auto;
     margin-right: auto;
+}
+::-webkit-scrollbar {
+    width: auto;
+}
+::-webkit-scrollbar-track {
+    background: #00B182;
+}
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a7a7a7;
 }
 
 /* ---------- */
