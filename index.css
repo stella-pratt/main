@@ -164,13 +164,13 @@ body {
     height: 60px;
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    left: 30px;
     z-index: 1;
     opacity: 0;
     transition: 0.2s;
 }
 #back2top:hover {
-    background-color: #F5F5F5;
+    background-color: #238732;
 }
 .arrow {
     width: 27px;
@@ -178,18 +178,6 @@ body {
     margin-right: auto;
 }
 
-::-webkit-scrollbar {
-    width: auto;
-}
-::-webkit-scrollbar-track {
-    background: #00B182;
-}
-::-webkit-scrollbar-thumb {
-    background: #c1c1c1;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #a7a7a7;
-}
 
 .main {
     width: 67%;
@@ -304,7 +292,7 @@ li {
 .reference {
     position: absolute;
     bottom: 0;
-    right: 5px;
+    left: 5px;
 }
 .contact-list a {
     transition: 0.2s;
@@ -318,3 +306,198 @@ li {
 .contact-list a:hover {
     color: black;
 }
+
+
+
+
+
+
+.clear {
+    clear: both;
+}
+
+
+/* Chat box things */
+
+#chat-box {
+    position: fixed;
+    bottom: 0;
+    right: 2%;
+    width: 23%;
+    height: 0;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: #238732 solid 2px;
+    border-right: #238732 solid 2px;
+    transition: height 1s;
+}
+#chat-header {
+    background-color: #238732;
+    position: fixed;
+    border-radius: 1vh 1vh 0 0;
+    height: 5vh;
+    width: 23%;
+    bottom: 0;
+    right: 2%;
+    transition: bottom 1s;
+}
+#chat-header h5 {
+    padding: 0;
+    margin: 0.7vh 0 0 3%;
+    font-size: 3vh;
+    font-family: "Calibri", serif;
+    width: 50%;
+    color: #373737;
+}
+#chat-button {
+    height: 50%;
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    margin: 1.5vh 3% 0 0;
+    transition: transform 1s;
+    transform: rotate(0);
+}
+
+
+
+#convo-box {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    height: 0;
+    transition: 1s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+.message-bot {
+    width: 75%;
+    padding: 0;
+    margin: 0 0 3% 3%;
+    height: auto;
+}
+#first-msg-bot {
+    margin-top: 3%;
+}
+.bot-icon {
+    border-radius: 50%;
+    width: 10%;
+    float: left;
+}
+.bot-msg {
+    background-color: #eef0f3;
+    width: 80%;
+    border-radius: 0 1vh 1vh;
+    margin: 0 0 0 3%;
+    padding: 2%;
+    float: left;
+}
+.bot-msg h4 {
+    font-family: "Calibri", serif;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.bot-msg p {
+    font-family: "Calibri Light", serif;
+    padding: 0;
+    margin: 5% 0 0 0;
+}
+.message-user {
+    width: 70%;
+    margin: 3%;
+    float: right;
+}
+.user-icon {
+    border-radius: 50%;
+    width: 10%;
+    float: right;
+}
+.user-msg {
+    background-color: #eef0f3;
+    width: 80%;
+    border-radius: 1vh 0 1vh 1vh;
+    margin: 0 3% 0 0;
+    padding: 2%;
+    float: right;
+    font-family: "Calibri Light", serif;
+    overflow-wrap: break-word;
+}
+.typing {
+    width: 40%;
+    margin: 3%;
+    display: block;
+    height: 1px;
+}
+.bot-typing-icon{
+    width: 18.75%;
+    border-radius: 50%;
+    float: left;
+}
+.type-dots-box {
+    background-color: #E4E4E8;
+    float: left;
+    width: 77%;
+    margin-left: 3%;
+    border-radius: 5vh;
+}
+.type-dots {
+    width: 60%;
+    margin: 4% 20%;
+}
+
+
+
+#type-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #238732;
+    height: 0;
+    transition: 1s;
+}
+#type-write:focus {
+    outline: none;
+    border: none;
+}
+#type-write {
+    width: 75%;
+    height: 5vh;
+    margin: 1.5vh 0 1.5vh 5%;
+    border: 0;
+    border-radius: 50vh;
+    padding: 0 5%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 130%;
+    display: inline-block;
+}
+#type-box form {
+    background-color: transparent;
+}
+#enter {
+    text-align: center;
+    width: 20%;
+    height: 8vh;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    border: 0;
+    background-color: #238732;
+    color: #f5f5f5;
+    font-family: "Calibri", serif;
+    font-size: 150%;
+    cursor: pointer;
+    z-index: 1;
+}
+/* ^^^ Chat box things ^^^ */

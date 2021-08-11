@@ -128,5 +128,40 @@
         <p class="reference">All images and videos <a
                 href="https://www.pexels.com/" target="_blank">Pexels</a> </p>
     </div><!--Footer-->
+
+
+
+    <div id="chat-header">
+        <h5>Live Chat</h5>
+        <div class="rotate">
+            <img src="Images/plusclose.png" alt="Close" id="chat-button"
+                        onclick="doChat()">
+        </div>
+    </div>
+    <div id="chat-box">
+        <div id="convo-box">
+            <div class="message-bot" id="first-msg-bot">
+                <img src="images/robo.png" alt="bot" class="bot-icon">
+                <div class="bot-msg">
+                    <h4>Ralph the Robot</h4>
+                    <p>Hi! I'm Ralph the Robot and I'm here to assist you with
+                        your needs. Just type in the box below if you need
+                        anything.</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="type-box">
+            <form autocomplete="off" name="chat-entry">
+                <input autocomplete="false" name="hidden" type="text" style="display:none;">
+                <input type="text" name="writings" id="type-write"
+                       maxlength="100" placeholder="Type Something..."
+                       onkeydown="if (event.keyCode == 13)
+                           printText(form)">
+                <input type="button" value="Send" id="enter"
+                       onclick="printText(form)">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
