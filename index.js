@@ -110,7 +110,7 @@ window.printText = function (form) {
 
 
         let img = document.createElement("img");
-        img.src = "images/user-icom.jpg";
+        img.src = "Images/user-icom.jpg";
         img.alt = "user";
         img.className = "user-icon";
         var element2 = document.getElementById("msg" + msgcounter);
@@ -135,7 +135,7 @@ window.printText = function (form) {
 
         let typIMG = document.createElement("img");
         typIMG.className = "bot-typing-icon";
-        typIMG.src = "images/robo.png";
+        typIMG.src = "Images/robo.png";
         typIMG.alt = "bot";
         var typIMGelement = document.getElementById("typ" + msgcounter);
         typIMGelement.appendChild(typIMG);
@@ -147,7 +147,7 @@ window.printText = function (form) {
 
         let typANI = document.createElement("img");
         typANI.className = "type-dots";
-        typANI.src = "images/typing.gif";
+        typANI.src = "Images/typing.gif";
         typANI.alt = "typing";
         var typingPos = document.getElementById("typBox" + msgcounter);
         typingPos.appendChild(typANI);
@@ -170,7 +170,7 @@ window.printText = function (form) {
 
 
             let img2 = document.createElement("img");
-            img2.src = "images/robo.png";
+            img2.src = "Images/robo.png";
             img2.alt = "bot";
             img2.className = "bot-icon";
             var element2 = document.getElementById("msgb" + msgcounter);
