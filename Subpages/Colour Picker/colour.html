@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colour Picker</title>
+    <link rel="stylesheet" href="colour.css">
+    <script src="colour.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>COLOUR PICKER</h1>
+    </div>
+    <div class="main">
+        <div class="wheel" id="wheel"></div>
+        <div class="sliders">
+            <input type="range" min="0" max="255" value="0" id="rgb-red"
+                   class="colour-sliders"
+                   oninput="printR(this.value)">
+            <input type="range" min="0" max="255" value="0" id="rgb-green"
+                   class="colour-sliders"
+                   oninput="printG(this.value)">
+            <input type="range" min="0" max="255" value="0" id="rgb-blue"
+                   class="colour-sliders"
+                   oninput="printB(this.value)">
+        </div>
+        <div class="output">
+            <input type="text" value="#000000" id="hex-output"
+                   oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p); colorFromHEX(this.value)" maxlength="7"
+                   autocomplete="off">
+
+            <button onclick="copyHex()" class="copy-btn" onmouseout="">
+                <img src="images/copy.png" class="copy-img">
+            </button>
+
+        </div>
+    </div>
+
+</body>
+</html>
