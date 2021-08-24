@@ -13,3 +13,6 @@ $(document).bind("mousewheel",function(event){
 
 document.getElementById("colour").setAttribute("onclick", "location.href =" +
 	" '../Subpages/Colour%20Picker/colour.html'");
+
+document.getElementById("weather").setAttribute("onclick", "location.href =" +
+	" '../Subpages/Weather/weather.html'");
