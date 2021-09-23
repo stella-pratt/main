@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Translate</title>
+    <link rel="stylesheet" href="translate.css">
+    <script src="translate.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="lang-select-box">
+        <select id="lang-select">
+            <option value="yoda">Yoda</option>
+            <option value="mandalorian">Mandalorian</option>
+            <option value="groot">Groot</option>
+            <option value="minion">Minion</option>
+            <option value="pirate">Pirate</option>
+            <option value="shakespeare">Shakespearean</option>
+            <option value="morse">Morse Code</option>
+            <option value="braille">Braille</option>
+            <option value="emoji">Emoji</option>
+        </select>
+    </div>
+    <textarea name="input" id="lang-input" class="input"></textarea>
+    <textarea name="output" READONLY class="output" id="lang-output"></textarea>
+<span onclick="translateText()">Hello</span>
+</body>
+</html>

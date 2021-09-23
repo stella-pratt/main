@@ -16,3 +16,6 @@ document.getElementById("colour").setAttribute("onclick", "location.href =" +
 
 document.getElementById("weather").setAttribute("onclick", "location.href =" +
 	" '../Subpages/Weather/weather.html'");
+
+document.getElementById("enviro").setAttribute("onclick", "location.href =" +
+	" '../Subpages/Enviro/index.html'");

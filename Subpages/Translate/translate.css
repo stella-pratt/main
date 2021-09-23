@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+textarea {
+    border: none;
+    border-radius: 1vh;
+    padding: 1vh;
+    resize: none;
+    overflow: hidden;
+    font-family: "Roboto", serif;
+    width: 20vw;
+    height: 20vh;
+    background: white;
+}
+textarea:focus {
+    outline: none;
+}
+select:focus {
+    outline: none;
+}
+select {
+    font-family: "Roboto", serif;
+}
+
+.lang-select-box {
+    width: 10vw;
+    margin: 20vh 45vw 0 45vw;
+}
+#lang-select {
+    width: 100%;
+}
+.input {
+    margin: 3vh 0 0 27.5vw;
+    float: left;
+}
+.output {
+    float: right;
+    margin: 3vh 27.5vw 0 0;
+}
