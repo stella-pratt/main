@@ -1,0 +1,81 @@
+body {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+.header {
+    font-family: "Raleway", serif;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.main {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3%;
+    border-radius: 20px 20px 0 0;
+}
+.search {
+    background-color: #BC2519;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+}
+#search_box {
+    height: 60px;
+    margin: 20px 0 20px 60px;
+    max-width: 300px;
+    width: 30%;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-family: "Roboto", serif;
+    font-size: 20px;
+}
+#type {
+    height: 40px;
+    margin: 30px 0 30px 50px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+}
+#search_btn {
+    height: 50px;
+    float: right;
+    margin: 25px 50px 25px 0;
+}
+
+
+
+
+
+.result {
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", serif;
+}
+.result:nth-child(odd) {
+    background-color: #d0d4d5;
+}
+.result:nth-child(even) {
+    background-color: #c6cacb;
+}
+.recipe {
+    flex-basis: 80%;
+}
+.category {
+    flex-basis: 10%;
+}
+.page_no {
+    flex-basis: 5%;
+}
+
+

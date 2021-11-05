@@ -19,3 +19,6 @@ document.getElementById("weather").setAttribute("onclick", "location.href =" +
 
 document.getElementById("enviro").setAttribute("onclick", "location.href =" +
 	" '../Subpages/Enviro/index.html'");
+
+document.getElementById("recipe").setAttribute("onclick", "location.href =" +
+	" '../Subpages/Recipies/Recipies.html'");

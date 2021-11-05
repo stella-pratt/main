@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="Recipies.css">
+    <script src="Recipies.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
+</head>
+<body onload="search()">
+<div class="header">RECIPES</div>
+
+<div class="main">
+    <div class="search">
+        <form autocomplete="off" onsubmit="return false;">
+            <input type="text" placeholder="Search..." id="search_box" onkeydown="setTimeout(() => {search();}, 0);">
+            <select name="type" id="type" onchange="search()">
+                <option value="any">Anything</option>
+                <option value="lamb">Lamb</option>
+                <option value="beef">Beef</option>
+                <option value="pork">Pork</option>
+                <option value="poultry">Duck/Poultry</option>
+                <option value="fish">Fish</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vege">Vegetables</option>
+            </select>
+            <input type="image" src="images/search.png" id="search_btn" onclick="search()">
+        </form>
+    </div>
+    <div class="results" id="results">
+        <div class="result"></div>
+        <div class="result"></div>
+        <div class="result"></div>
+        <div class="result"></div>
+    </div>
+</div>
+</body>
+</html>
