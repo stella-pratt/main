@@ -77,5 +77,7 @@ body {
 .page_no {
     flex-basis: 5%;
 }
-
+#starred{
+    background-color: #ffc30b;
+}
 
