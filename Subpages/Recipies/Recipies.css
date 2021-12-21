@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url("images/background.jpg");
     background-size: cover;
@@ -81,3 +85,28 @@ body {
     background-color: #ffc30b;
 }
 
+
+
+
+#back2top {
+    background-color: #BC2519;
+    border: none;
+    border-radius: 50%;
+    cursor: default;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.2s;
+}
+#back2top:hover {
+    background-color: #ff1100;
+}
+.arrow {
+    width: 27px;
+    margin-left: auto;
+    margin-right: auto;
+}
