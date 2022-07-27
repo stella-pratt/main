@@ -22,3 +22,6 @@ document.getElementById("enviro").setAttribute("onclick", "location.href =" +
 
 document.getElementById("recipe").setAttribute("onclick", "location.href =" +
 	" '../Subpages/Recipies/Recipies.html'");
+
+document.getElementById("wallpapers").setAttribute("onclick", "location.href =" +
+	" 'https://seb420.github.io/Wallpapers/'");
