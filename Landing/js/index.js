@@ -12,16 +12,16 @@ $(document).bind("mousewheel",function(event){
 })
 
 document.getElementById("colour").setAttribute("onclick", "location.href =" +
-	" '../Subpages/Colour%20Picker/colour.html'");
+	" '/main/Subpages/Colour%20Picker/colour.html'");
 
 document.getElementById("weather").setAttribute("onclick", "location.href =" +
-	" '../Subpages/Weather/weather.html'");
+	" '/main/Subpages/Weather/weather.html'");
 
 document.getElementById("enviro").setAttribute("onclick", "location.href =" +
-	" '../Subpages/Enviro/index.html'");
+	" '/main/Subpages/Enviro/index.html'");
 
 document.getElementById("recipe").setAttribute("onclick", "location.href =" +
-	" '../Subpages/Recipies/Recipies.html'");
+	" '/main/Subpages/Recipies/Recipies.html'");
 
 document.getElementById("wallpapers").setAttribute("onclick", "location.href =" +
-	" 'https://seb420.github.io/Wallpapers/'");
+	" 'https://stella-pratt.github.io/Wallpapers/'");
